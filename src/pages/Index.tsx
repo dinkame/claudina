@@ -1,5 +1,4 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Button } from "@/components/ui/button";
 
 const Index = () => {
@@ -61,9 +60,6 @@ const Index = () => {
             <Card>
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center mb-4">
-                  <Avatar className="w-16 h-16 mb-4">
-                    <AvatarFallback>גיא</AvatarFallback>
-                  </Avatar>
                   <h3 className="font-semibold">גיא</h3>
                   <p className="text-sm text-muted-foreground">מנהל מערכות מידע</p>
                 </div>
@@ -74,9 +70,6 @@ const Index = () => {
             <Card>
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center mb-4">
-                  <Avatar className="w-16 h-16 mb-4">
-                    <AvatarFallback>מורן</AvatarFallback>
-                  </Avatar>
                   <h3 className="font-semibold">מורן</h3>
                   <p className="text-sm text-muted-foreground">מנהלת מחלקה</p>
                 </div>
@@ -87,9 +80,6 @@ const Index = () => {
             <Card>
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center mb-4">
-                  <Avatar className="w-16 h-16 mb-4">
-                    <AvatarFallback>אסתר</AvatarFallback>
-                  </Avatar>
                   <h3 className="font-semibold">אסתר</h3>
                   <p className="text-sm text-muted-foreground">עו״ד בכירה</p>
                 </div>
@@ -105,13 +95,13 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">על המקימה</h2>
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="md:w-1/3">
-              <Avatar className="w-48 h-48 mx-auto">
-                <AvatarFallback>דינה</AvatarFallback>
-              </Avatar>
-            </div>
             <div className="md:w-2/3">
-              <h3 className="text-2xl font-bold mb-4">דינה ניישטאט</h3>
+              <h3 className="text-2xl font-bold mb-4">
+                <a href="https://www.genspark.ai/search?query=Who%20is%20Dina%20Neishtadt%20or%20%D7%93%D7%99%D7%A0%D7%94%20%D7%A0%D7%99%D7%99%D7%A9%D7%98%D7%90%D7%98%20and%20what%20is%20here%20work%20experience" 
+                   className="hover:text-blue-600 transition-colors">
+                  דינה ניישטאט (Dina Neishtadt)
+                </a>
+              </h3>
               <p className="mb-4">
                 מובילת מוצר ויועצת אסטרטגית המשלבת חשיבה רב-תחומית עם ראייה גלובלית. עם ניסיון של למעלה מ-15 שנים בתחומי הטכנולוגיה, עיצוב ובינה מלאכותית.
               </p>
@@ -127,7 +117,11 @@ const Index = () => {
       <section className="py-20 bg-gray-50">
         <div className="container px-4 mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">צור קשר</h2>
-          <p className="text-xl mb-8">dinkan@gmail.com</p>
+          <p className="text-xl mb-8">
+            <a href="mailto:dinkan@gmail.com" className="text-blue-600 hover:text-blue-800 transition-colors">
+              dinkan@gmail.com
+            </a>
+          </p>
           <Button size="lg">
             שלח הודעה
           </Button>
