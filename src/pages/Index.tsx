@@ -5,7 +5,14 @@ const Index = () => {
   return (
     <div dir="rtl" className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center bg-gradient-to-b from-purple-50 to-white">
+      <section className="relative h-[90vh] flex items-center justify-center bg-gradient-to-b from-purple-50 to-white overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
+            alt="Background" 
+            className="w-full h-full object-cover opacity-10"
+          />
+        </div>
         <div className="absolute inset-0 bg-[linear-gradient(102.3deg,rgba(147,39,143,1)_5.9%,rgba(234,172,232,1)_64%,rgba(246,219,245,1)_89%)] opacity-10"></div>
         <div className="container px-4 mx-auto text-center relative animate-fade-in">
           <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">
@@ -23,7 +30,14 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">שירותי החברה</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-purple-50">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-purple-50 overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
+                  alt="Process Optimization" 
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>ייעול תהליכים</CardTitle>
               </CardHeader>
@@ -32,7 +46,14 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-blue-50">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-blue-50 overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" 
+                  alt="Product Management" 
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>ניהול מוצר</CardTitle>
               </CardHeader>
@@ -41,7 +62,14 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-pink-50">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-pink-50 overflow-hidden">
+              <div className="h-48 overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                  alt="Strategic Planning" 
+                  className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
+                />
+              </div>
               <CardHeader>
                 <CardTitle>תכנון אסטרטגי</CardTitle>
               </CardHeader>
@@ -96,6 +124,13 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">על המקימה</h2>
           <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="md:w-1/3">
+              <img 
+                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
+                alt="Professional at work" 
+                className="rounded-lg shadow-lg w-full h-auto"
+              />
+            </div>
             <div className="md:w-2/3">
               <h3 className="text-2xl font-bold mb-4">
                 <a href="https://www.genspark.ai/search?query=Who%20is%20Dina%20Neishtadt%20or%20%D7%93%D7%99%D7%A0%D7%94%20%D7%A0%D7%99%D7%99%D7%A9%D7%98%D7%90%D7%98%20and%20what%20is%20here%20work%20experience" 
@@ -106,9 +141,6 @@ const Index = () => {
               <p className="mb-4">
                 מובילת מוצר ויועצת אסטרטגית המשלבת חשיבה רב-תחומית עם ראייה גלובלית. עם ניסיון של למעלה מ-15 שנים בתחומי הטכנולוגיה, עיצוב ובינה מלאכותית.
               </p>
-              <Button variant="outline" className="mt-4">
-                צור קשר
-              </Button>
             </div>
           </div>
         </div>
