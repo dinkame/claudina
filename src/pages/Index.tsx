@@ -6,12 +6,13 @@ const Index = () => {
     <div dir="rtl" className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="relative h-[90vh] flex items-center justify-center bg-gradient-to-b from-purple-50 to-white">
-        <div className="container px-4 mx-auto text-center">
+        <div className="absolute inset-0 bg-[linear-gradient(102.3deg,rgba(147,39,143,1)_5.9%,rgba(234,172,232,1)_64%,rgba(246,219,245,1)_89%)] opacity-10"></div>
+        <div className="container px-4 mx-auto text-center relative animate-fade-in">
           <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">
             קלודינה
           </h1>
-          <p className="text-2xl mb-4">תומכת בעסקים של מחר</p>
-          <p className="text-xl text-muted-foreground">
+          <p className="text-2xl mb-4 animate-fade-in" style={{ animationDelay: "200ms" }}>תומכת בעסקים של מחר</p>
+          <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "400ms" }}>
             ליווי המסע שלכם אל העתיד, יד ביד עם האנשים בדרך
           </p>
         </div>
@@ -22,7 +23,7 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">שירותי החברה</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-purple-50">
               <CardHeader>
                 <CardTitle>ייעול תהליכים</CardTitle>
               </CardHeader>
@@ -31,7 +32,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-blue-50">
               <CardHeader>
                 <CardTitle>ניהול מוצר</CardTitle>
               </CardHeader>
@@ -40,7 +41,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="hover:shadow-lg transition-shadow">
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-pink-50">
               <CardHeader>
                 <CardTitle>תכנון אסטרטגי</CardTitle>
               </CardHeader>
@@ -53,11 +54,11 @@ const Index = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-b from-white to-purple-50">
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">מה לקוחות אומרים עלינו</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center mb-4">
                   <h3 className="font-semibold">גיא</h3>
@@ -67,7 +68,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center mb-4">
                   <h3 className="font-semibold">מורן</h3>
@@ -77,7 +78,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardContent className="pt-6">
                 <div className="flex flex-col items-center mb-4">
                   <h3 className="font-semibold">אסתר</h3>
@@ -91,7 +92,7 @@ const Index = () => {
       </section>
 
       {/* About Section */}
-      <section className="py-20">
+      <section className="py-20 bg-gradient-to-br from-white via-purple-50 to-white">
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">על המקימה</h2>
           <div className="flex flex-col md:flex-row items-center gap-8">
@@ -114,7 +115,7 @@ const Index = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-gradient-to-t from-purple-50 to-white">
         <div className="container px-4 mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">צור קשר</h2>
           <p className="text-xl mb-8">
@@ -122,9 +123,6 @@ const Index = () => {
               dinkan@gmail.com
             </a>
           </p>
-          <Button size="lg">
-            שלח הודעה
-          </Button>
         </div>
       </section>
     </div>
