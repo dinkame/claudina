@@ -1,5 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { Linkedin } from "lucide-react";
 
 const Index = () => {
   return (
@@ -132,10 +133,13 @@ const Index = () => {
               />
             </div>
             <div className="md:w-2/3">
-              <h3 className="text-2xl font-bold mb-4">
-                <a href="https://www.genspark.ai/search?query=Who%20is%20Dina%20Neishtadt%20or%20%D7%93%D7%99%D7%A0%D7%94%20%D7%A0%D7%99%D7%99%D7%A9%D7%98%D7%90%D7%98%20and%20what%20is%20here%20work%20experience" 
-                   className="hover:text-blue-600 transition-colors">
+              <h3 className="text-2xl font-bold mb-4 flex items-center gap-2">
+                <a href="https://www.linkedin.com/in/dinaneishtadt/" 
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   className="hover:text-blue-600 transition-colors inline-flex items-center gap-2">
                   דינה ניישטאט (Dina Neishtadt)
+                  <Linkedin className="inline h-5 w-5" />
                 </a>
               </h3>
               <p className="mb-4">
