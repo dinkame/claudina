@@ -124,12 +124,7 @@ const Index = () => {
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">על המקימה</h2>
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="md:w-1/3 space-y-4">
-              <img 
-                src="https://images.unsplash.com/photo-1581092795360-fd1ca04f0952" 
-                alt="Professional at work" 
-                className="rounded-lg shadow-lg w-full h-auto hover:scale-105 transition-transform duration-300"
-              />
+            <div className="md:w-1/3">
               <img 
                 src="/lovable-uploads/1e1afad4-8fe6-4049-8844-638d2e382031.png" 
                 alt="Dina in creative lighting" 
