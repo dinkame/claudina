@@ -25,8 +25,6 @@ const Index = () => {
           </p>
         </div>
       </section>
-
-      {/* Services Section */}
       <section className="py-20 bg-white">
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">שירותי החברה</h2>
@@ -81,8 +79,6 @@ const Index = () => {
           </div>
         </div>
       </section>
-
-      {/* Testimonials Section */}
       <section className="py-20 bg-gradient-to-b from-white to-purple-50">
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">מה לקוחות אומרים עלינו</h2>
@@ -127,8 +123,8 @@ const Index = () => {
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="md:w-1/3">
               <img 
-                src="/lovable-uploads/1e1afad4-8fe6-4049-8844-638d2e382031.png" 
-                alt="Dina in creative lighting" 
+                src="/lovable-uploads/350ce322-233d-4767-ad46-c75c6692ffd8.png" 
+                alt="Black and white portrait in subway station" 
                 className="rounded-lg shadow-lg w-full h-auto hover:scale-105 transition-transform duration-300"
               />
             </div>
@@ -150,7 +146,6 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Contact Section */}
       <section className="py-20 bg-gradient-to-t from-purple-50 to-white">
         <div className="container px-4 mx-auto text-center">
           <h2 className="text-3xl font-bold mb-8">צור קשר</h2>
