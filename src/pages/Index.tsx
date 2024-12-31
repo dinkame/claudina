@@ -1,6 +1,6 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Linkedin } from "lucide-react";
+import { Linkedin, MessageCircle } from "lucide-react";
 
 const Index = () => {
   return (
@@ -155,11 +155,23 @@ const Index = () => {
       <section className="py-24 bg-gradient-to-t from-purple-50/50 to-white">
         <div className="container px-4 mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-gray-800">צור קשר</h2>
-          <p className="text-xl mb-8">
-            <a href="mailto:dinkan@gmail.com" className="text-blue-600 hover:text-blue-800 transition-colors hover:underline">
-              dinkan@gmail.com
-            </a>
-          </p>
+          <div className="space-y-4">
+            <p className="text-xl">
+              <a href="mailto:dinkan@gmail.com" className="text-blue-600 hover:text-blue-800 transition-colors hover:underline">
+                dinkan@gmail.com
+              </a>
+            </p>
+            <div className="flex justify-center gap-4">
+              <Button
+                variant="default"
+                className="bg-green-600 hover:bg-green-700 transition-colors"
+                onClick={() => window.open('https://wa.me/972547341867', '_blank')}
+              >
+                <MessageCircle className="mr-2" />
+                WhatsApp
+              </Button>
+            </div>
+          </div>
         </div>
       </section>
     </div>
