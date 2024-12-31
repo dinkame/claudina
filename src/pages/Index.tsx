@@ -6,25 +6,26 @@ const Index = () => {
   return (
     <div dir="rtl" className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section className="relative h-[90vh] flex items-center justify-center bg-gradient-to-b from-purple-50 to-white overflow-hidden">
+      <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src="https://images.unsplash.com/photo-1605810230434-7631ac76ec81" 
+            src="/lovable-uploads/42772dbd-10db-4b1d-8c7a-74a4b0050243.png" 
             alt="Background" 
-            className="w-full h-full object-cover opacity-10"
+            className="w-full h-full object-cover opacity-20"
           />
         </div>
-        <div className="absolute inset-0 bg-[linear-gradient(102.3deg,rgba(147,39,143,1)_5.9%,rgba(234,172,232,1)_64%,rgba(246,219,245,1)_89%)] opacity-10"></div>
-        <div className="container px-4 mx-auto text-center relative animate-fade-in">
-          <h1 className="text-5xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">
+        <div className="absolute inset-0 bg-gradient-to-b from-blue-900/40 to-blue-950/60"></div>
+        <div className="container px-4 mx-auto text-center relative z-10">
+          <h1 className="text-5xl font-bold mb-6 text-white">
             קלודינה
           </h1>
-          <p className="text-2xl mb-4 animate-fade-in" style={{ animationDelay: "200ms" }}>תומכת בעסקים של מחר</p>
-          <p className="text-xl text-muted-foreground animate-fade-in" style={{ animationDelay: "400ms" }}>
+          <p className="text-2xl mb-4 text-white" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>תומכת בעסקים של מחר</p>
+          <p className="text-xl text-blue-100" style={{ textShadow: '0 2px 4px rgba(0,0,0,0.3)' }}>
             ליווי המסע שלכם אל העתיד, יד ביד עם האנשים בדרך
           </p>
         </div>
       </section>
+
       <section className="py-20 bg-white">
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">שירותי החברה</h2>
@@ -32,7 +33,7 @@ const Index = () => {
             <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-purple-50 overflow-hidden">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
+                  src="/lovable-uploads/50835bd6-aab0-43a9-a708-7f9cd1138e87.png" 
                   alt="Process Optimization" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
@@ -64,7 +65,7 @@ const Index = () => {
             <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1 bg-gradient-to-br from-white to-pink-50 overflow-hidden">
               <div className="h-48 overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d" 
+                  src="/lovable-uploads/da9003fb-92a7-48b8-99e4-e7c1fe88c48b.png" 
                   alt="Strategic Planning" 
                   className="w-full h-full object-cover transition-transform duration-300 hover:scale-105"
                 />
@@ -79,6 +80,7 @@ const Index = () => {
           </div>
         </div>
       </section>
+
       <section className="py-20 bg-gradient-to-b from-white to-purple-50">
         <div className="container px-4 mx-auto">
           <h2 className="text-3xl font-bold text-center mb-12">מה לקוחות אומרים עלינו</h2>
