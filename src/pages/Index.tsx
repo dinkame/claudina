@@ -11,35 +11,39 @@ const Index = () => {
           <img 
             src="/lovable-uploads/42772dbd-10db-4b1d-8c7a-74a4b0050243.png" 
             alt="Background" 
-            className="w-full h-full object-cover opacity-15 scale-105 transform transition-transform duration-[30s] hover:scale-110"
+            className="w-full h-full object-cover opacity-15"
+            loading="eager"
+            decoding="async"
           />
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-blue-950/80 via-purple-950/70 to-blue-950/90"></div>
+        <div className="absolute inset-0 bg-blue-950/80"></div>
         <div className="container px-4 mx-auto text-center relative z-10">
-          <div className="animate-fade-in space-y-6">
-            <h1 className="text-6xl font-bold mb-6 text-white drop-shadow-xl">
+          <div className="space-y-6">
+            <h1 className="text-6xl font-bold mb-6 text-white">
               קלודינה
             </h1>
-            <p className="text-3xl mb-4 text-white font-light drop-shadow-xl">
+            <p className="text-3xl mb-4 text-white font-light">
               תומכת בעסקים של מחר
             </p>
-            <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed drop-shadow-xl">
+            <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed">
               ליווי המסע שלכם אל העתיד, יד ביד עם האנשים בדרך
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-b from-gray-900 via-gray-800 to-gray-900">
+      <section className="py-24 bg-gray-900">
         <div className="container px-4 mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">שירותי החברה</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 bg-white/95 overflow-hidden border-0 shadow-lg">
+            <Card className="bg-white/95 overflow-hidden border-0 shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
                   src="/lovable-uploads/50835bd6-aab0-43a9-a708-7f9cd1138e87.png" 
                   alt="Process Optimization" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <CardHeader>
@@ -50,12 +54,14 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 bg-white/95 overflow-hidden border-0 shadow-lg">
+            <Card className="bg-white/95 overflow-hidden border-0 shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
                   src="https://images.unsplash.com/photo-1460925895917-afdab827c52f" 
                   alt="Product Management" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <CardHeader>
@@ -66,12 +72,14 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 bg-white/95 overflow-hidden border-0 shadow-lg">
+            <Card className="bg-white/95 overflow-hidden border-0 shadow-lg">
               <div className="h-48 overflow-hidden">
                 <img 
                   src="/lovable-uploads/da9003fb-92a7-48b8-99e4-e7c1fe88c48b.png" 
                   alt="Strategic Planning" 
-                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <CardHeader>
@@ -85,11 +93,11 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="py-24 bg-gray-900">
         <div className="container px-4 mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">מה לקוחות אומרים עלינו</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 bg-white/95 backdrop-blur border-0 shadow-lg">
+            <Card className="bg-white/95 backdrop-blur border-0 shadow-lg">
               <CardContent className="pt-8">
                 <div className="flex flex-col items-center mb-6">
                   <h3 className="font-semibold text-xl text-gray-900">גיא</h3>
@@ -99,7 +107,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 bg-white/80 backdrop-blur border-0 shadow-lg">
+            <Card className="bg-white/80 backdrop-blur border-0 shadow-lg">
               <CardContent className="pt-8">
                 <div className="flex flex-col items-center mb-6">
                   <h3 className="font-semibold text-xl text-gray-800">מורן</h3>
@@ -109,7 +117,7 @@ const Index = () => {
               </CardContent>
             </Card>
 
-            <Card className="group hover:shadow-xl transition-all duration-500 hover:-translate-y-2 bg-white/80 backdrop-blur border-0 shadow-lg">
+            <Card className="bg-white/80 backdrop-blur border-0 shadow-lg">
               <CardContent className="pt-8">
                 <div className="flex flex-col items-center mb-6">
                   <h3 className="font-semibold text-xl text-gray-800">אסתר</h3>
@@ -122,7 +130,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900">
+      <section className="py-24 bg-gray-900">
         <div className="container px-4 mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">על המקימה</h2>
           <div className="flex flex-col md:flex-row items-center gap-12">
@@ -130,7 +138,9 @@ const Index = () => {
               <img 
                 src="/lovable-uploads/350ce322-233d-4767-ad46-c75c6692ffd8.png" 
                 alt="Black and white portrait in subway station" 
-                className="rounded-lg shadow-xl w-full h-auto hover:scale-105 transition-transform duration-500"
+                className="rounded-lg shadow-xl w-full h-auto"
+                loading="lazy"
+                decoding="async"
               />
             </div>
             <div className="md:w-2/3">
@@ -151,7 +161,7 @@ const Index = () => {
         </div>
       </section>
 
-      <section className="py-24 bg-gradient-to-t from-gray-900 to-gray-800">
+      <section className="py-24 bg-gray-900">
         <div className="container px-4 mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-white">צור קשר</h2>
           <div className="space-y-4">
