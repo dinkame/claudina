@@ -29,7 +29,7 @@ const Index = () => {
               תומכת בעסקים של מחר
             </p>
             <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed">
-              ליווי המסע שלכם אל העתיד, יד ביד עם האנשים בדרך
+              ליווי העסק במסע אל העתיד, יד ביד עם האנשים בדרך
             </p>
           </div>
         </div>
