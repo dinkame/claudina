@@ -1,8 +1,11 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Linkedin, MessageCircle } from "lucide-react";
+import { useTracking, trackClick } from "../hooks/useTracking";
 
 const Index = () => {
+  useTracking(); // Initialize scroll tracking
+
   return (
     <div dir="rtl" className="min-h-screen bg-background">
       {/* Hero Section */}
@@ -32,6 +35,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Services Section */}
       <section className="py-24 bg-gray-900">
         <div className="container px-4 mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">שירותי החברה</h2>
@@ -93,6 +97,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
       <section className="py-24 bg-gray-900">
         <div className="container px-4 mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">מה לקוחות אומרים עלינו</h2>
@@ -130,6 +135,7 @@ const Index = () => {
         </div>
       </section>
 
+      {/* About Section */}
       <section className="py-24 bg-gray-900">
         <div className="container px-4 mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 text-white">על המקימה</h2>
@@ -148,6 +154,7 @@ const Index = () => {
                 <a href="https://www.linkedin.com/in/dinaneishtadt/" 
                    target="_blank"
                    rel="noopener noreferrer"
+                   onClick={() => trackClick('linkedin_link')}
                    className="hover:text-blue-300 transition-colors inline-flex items-center gap-3 text-white">
                   דינה ניישטאט (Dina Neishtadt)
                   <Linkedin className="inline h-6 w-6" />
@@ -161,12 +168,17 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Contact Section */}
       <section className="py-24 bg-gray-900">
         <div className="container px-4 mx-auto text-center">
           <h2 className="text-4xl font-bold mb-8 text-white">צור קשר</h2>
           <div className="space-y-4">
             <p className="text-xl">
-              <a href="mailto:dinkan@gmail.com" className="text-blue-300 hover:text-blue-400 transition-colors hover:underline">
+              <a 
+                href="mailto:dinkan@gmail.com" 
+                className="text-blue-300 hover:text-blue-400 transition-colors hover:underline"
+                onClick={() => trackClick('email_link')}
+              >
                 dinkan@gmail.com
               </a>
             </p>
@@ -174,7 +186,10 @@ const Index = () => {
               <Button
                 variant="default"
                 className="bg-green-600 hover:bg-green-700 transition-colors"
-                onClick={() => window.open('https://wa.me/972547341867', '_blank')}
+                onClick={() => {
+                  trackClick('whatsapp_button');
+                  window.open('https://wa.me/972547341867', '_blank');
+                }}
               >
                 <MessageCircle className="mr-2" />
                 WhatsApp
