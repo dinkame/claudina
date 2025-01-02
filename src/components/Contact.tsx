@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { MessageCircle } from "lucide-react";
+import { MessageCircle, Facebook, Linkedin } from "lucide-react";
 import { trackClick } from "../hooks/useTracking";
 
 const Contact = () => (
@@ -29,6 +29,26 @@ const Contact = () => (
             <MessageCircle className="mr-2" />
             WhatsApp
           </Button>
+        </div>
+        <div className="flex justify-center gap-4 mt-6">
+          <a 
+            href="https://www.facebook.com/profile.php?id=61571270376286"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('facebook_link')}
+            className="text-blue-300 hover:text-blue-400 transition-colors"
+          >
+            <Facebook size={24} />
+          </a>
+          <a 
+            href="https://www.linkedin.com/in/dinaneishtadt/"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('linkedin_link')}
+            className="text-blue-300 hover:text-blue-400 transition-colors"
+          >
+            <Linkedin size={24} />
+          </a>
         </div>
       </div>
     </div>
