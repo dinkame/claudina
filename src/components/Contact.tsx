@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from "@/components/ui/button";
-import { MessageCircle, Facebook, Linkedin } from "lucide-react";
+import { MessageCircle, Facebook, Linkedin, Twitter } from "lucide-react";
 import { trackClick } from "../hooks/useTracking";
 
 const Contact = () => (
@@ -48,6 +48,15 @@ const Contact = () => (
             className="text-blue-300 hover:text-blue-400 transition-colors"
           >
             <Linkedin size={24} />
+          </a>
+          <a 
+            href="https://x.com/DinkaMe"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('twitter_link')}
+            className="text-blue-300 hover:text-blue-400 transition-colors"
+          >
+            <Twitter size={24} />
           </a>
         </div>
       </div>
