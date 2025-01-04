@@ -32,15 +32,6 @@ const Contact = () => (
         </div>
         <div className="flex justify-center gap-4 mt-6">
           <a 
-            href="https://www.facebook.com/profile.php?id=61571270376286"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={() => trackClick('facebook_link')}
-            className="text-blue-300 hover:text-blue-400 transition-colors"
-          >
-            <Facebook size={24} />
-          </a>
-          <a 
             href="https://www.linkedin.com/in/dinaneishtadt/"
             target="_blank"
             rel="noopener noreferrer"
@@ -57,6 +48,15 @@ const Contact = () => (
             className="text-blue-300 hover:text-blue-400 transition-colors"
           >
             <Twitter size={24} />
+          </a>
+          <a 
+            href="https://www.facebook.com/profile.php?id=61571270376286"
+            target="_blank"
+            rel="noopener noreferrer"
+            onClick={() => trackClick('facebook_link')}
+            className="text-blue-300 hover:text-blue-400 transition-colors"
+          >
+            <Facebook size={24} />
           </a>
         </div>
       </div>
