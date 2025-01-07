@@ -1,22 +1,21 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
-const AboutUs = () => (
-  <section className="py-24 bg-white">
-    <div className="container px-4 mx-auto">
-      <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">עוד עלינו</h2>
-      <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed">
-        <p>
-          תהליך העבודה שלנו מתחיל בחקר וגילוי מעמיק, הכולל מחקר משתמשים, זיהוי צרכים סמויים וסדרת דיונים אסטרטגיים עם הנהלת החברה. בדיונים אלה אנו מעמיקים בחזון המוצר ומקיימים סיעורי מוחות משותפים כדי להבטיח שהפתרון מתכתב עם האסטרטגיה העסקית הכוללת. רק מתוך הבנה מעמיקה של האתגר האמיתי, אנו מעצבים פתרונות ברמה האסטרטגית ומתכננים את דרך הטמעתם.
-        </p>
-        <p>
-          אנו משלבים מומחיות בניהול מוצר אסטרטגי וייעוץ עסקי עם הבנה מעמיקה של התנהגות אנושית. יכולת התנועה שלנו בין רזולוציות - מראייה אסטרטגית רחבה ועד לפתרונות מדויקים ברמת השטח - מאפשרת לנו להוביל שינויים משמעותיים בפיתוח מוצרים והתייעלות תהליכים פנים-ארגונית בחברה המפתחת את המוצר וגם אצל הלקוח. אנו עובדים בשיתוף פעולה הדוק עם הצוותים כדי לגבש אסטרטגיה עסקית ולהוביל תהליכי שינוי מורכבים.
-        </p>
-        <p>
-          במסגרת פרויקטים נבחרים, אנו משתפים פעולה עם רשת מומחים מקצועיים מובילים בתחומם. שותפים אלו עוברים תהליך הכשרה במתודולוגיה הייחודית שלנו ועובדים תחת הנחייה צמודה, מה שמבטיח שכל פרויקט - גם אם מבוצע על ידי שותף - עומד בסטנדרטים הגבוהים ביותר שלנו. שיטת עבודה זו מאפשרת לנו להציע ללקוחותינו גמישות מירבית בהיקפי העבודה, תוך שמירה קפדנית על איכות הביצוע והמתודולוגיה המוכחת שלנו.
-        </p>
+const AboutUs = () => {
+  const { t } = useTranslation();
+  
+  return (
+    <section className="py-24 bg-white">
+      <div className="container px-4 mx-auto">
+        <h2 className="text-4xl font-bold text-center mb-16 text-gray-900">{t('aboutUs.title')}</h2>
+        <div className="max-w-4xl mx-auto space-y-6 text-lg text-gray-700 leading-relaxed">
+          <p>{t('aboutUs.paragraph1')}</p>
+          <p>{t('aboutUs.paragraph2')}</p>
+          <p>{t('aboutUs.paragraph3')}</p>
+        </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};
 
 export default AboutUs;
