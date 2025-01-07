@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "title": "Claudina",
+    "subtitle": "Supporting Tomorrow's Businesses",
+    "description": "Guiding businesses on their journey to the future, hand in hand with people along the way"
+  },
+  "services": {
+    "title": "Our Services",
+    "processOptimization": {
+      "title": "Process Optimization",
+      "description": "From diagnosing the current state and identifying bottlenecks, through planning and adapting technological solutions, to professional implementation including personal guidance"
+    },
+    "productManagement": {
+      "title": "Product Management",
+      "description": "From characterizing and documenting needs, through data analysis and roadmap management, to identifying growth opportunities, developing partnerships and creating customized sales materials"
+    },
+    "strategicPlanning": {
+      "title": "Strategic Planning",
+      "description": "Defining product vision, market analysis, competing products, finding inspiration products and creating business strategy together with the client"
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "testimonial1": {
+      "name": "Guy",
+      "role": "IT Manager",
+      "text": "I was amazed to discover how much important information came up in the in-depth interview they conducted with me. In the past, we always started with the solutions we thought we needed, but in the end we always found they weren't good enough. Dina knew exactly what questions to ask to understand our real needs."
+    },
+    "testimonial2": {
+      "name": "Moran",
+      "role": "Department Manager",
+      "text": "As a business manager, my time is dedicated to the business core. Our employees worked with several separate digital systems and had to enter the same data repeatedly in different systems, which created time waste and opened the door for errors. I had no idea how technology could streamline our work until the experts interviewed me and understood our processes."
+    },
+    "testimonial3": {
+      "name": "Esther",
+      "role": "Senior Attorney",
+      "text": "The most important thing for me is time with my clients, and I didn't have a moment to look for technological solutions. In the past, I found myself working late hours to complete administrative tasks at the expense of family time. Investing in an expert who understood my needs and implemented time-saving solutions for busy people like me paid off."
+    }
+  },
+  "about": {
+    "title": "About the Founder",
+    "name": "Dina Neishtadt",
+    "description1": "is a product leader and strategic consultant combining multidisciplinary thinking with a global perspective. With over 15 years of experience in technology, design, and artificial intelligence, she specializes in turning complex ideas into innovative, user-focused products. Her diverse background, including software development, product management, industrial design, and prompt engineering, gives her a unique perspective in creating impactful solutions. Her international experience, gained in Israel, Europe, and New York, includes working with clients from the West and Asia, and leading products serving millions of users in 190+ countries.",
+    "description2": "Her unique approach combines technical expertise, creative thinking, and business acumen, with an emphasis on continuous learning and knowledge sharing."
+  },
+  "aboutUs": {
+    "title": "More About Us",
+    "paragraph1": "Our work process begins with in-depth research and discovery, including user research, identifying hidden needs, and a series of strategic discussions with company management. In these discussions, we delve into the product vision and conduct joint brainstorming sessions to ensure the solution aligns with the overall business strategy. Only through a deep understanding of the real challenge do we design solutions at the strategic level and plan their implementation.",
+    "paragraph2": "We combine expertise in strategic product management and business consulting with a deep understanding of human behavior. Our ability to move between resolutions - from broad strategic vision to precise solutions at the ground level - allows us to lead meaningful changes in product development and internal organizational efficiency both in the company developing the product and with the client. We work closely with teams to formulate business strategy and lead complex change processes.",
+    "paragraph3": "For selected projects, we collaborate with a network of leading professional experts in their fields. These partners undergo training in our unique methodology and work under close guidance, ensuring that every project - even if executed by a partner - meets our highest standards. This working method allows us to offer our clients maximum flexibility in work scope while maintaining strict quality control and our proven methodology."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "subtitle": "We're here to help with any questions",
+    "email": "Email",
+    "instantMessage": "Instant Message",
+    "socialMedia": "Social Media"
+  }
+}

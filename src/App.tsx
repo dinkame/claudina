@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import Blog from "./pages/Blog";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
+import LanguageSwitcher from "./components/LanguageSwitcher";
+import "./i18n/config";
 
 const queryClient = new QueryClient();
 
@@ -15,6 +17,7 @@ const App = () => (
     <TooltipProvider>
       <Toaster />
       <Sonner />
+      <LanguageSwitcher />
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Index />} />
