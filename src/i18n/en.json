@@ -55,5 +55,31 @@
     "email": "Email",
     "instantMessage": "Instant Message",
     "socialMedia": "Social Media"
+  },
+  "blog": {
+    "title": "Our Blog",
+    "loading": "Loading...",
+    "readMore": "Read More"
+  },
+  "admin": {
+    "login": {
+      "title": "Admin Login",
+      "username": "Username",
+      "password": "Password",
+      "submit": "Login",
+      "error": "Invalid username or password",
+      "success": "Successfully logged in"
+    },
+    "dashboard": {
+      "title": "Blog Management",
+      "logout": "Logout",
+      "newPost": {
+        "title": "New Post",
+        "titlePlaceholder": "Post Title",
+        "contentPlaceholder": "Post Content",
+        "submit": "Publish Post",
+        "success": "Post published successfully"
+      }
+    }
   }
 }

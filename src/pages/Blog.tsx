@@ -1,6 +1,7 @@
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useQuery } from '@tanstack/react-query';
+import { useTranslation } from 'react-i18next';
 
 interface BlogPost {
   id: string;
@@ -25,6 +26,7 @@ const mockPosts: BlogPost[] = [
 ];
 
 const Blog = () => {
+  const { t } = useTranslation();
   const { data: posts, isLoading } = useQuery({
     queryKey: ['blog-posts'],
     queryFn: async () => {
@@ -34,18 +36,18 @@ const Blog = () => {
   });
 
   if (isLoading) {
-    return <div className="flex justify-center p-8">טוען...</div>;
+    return <div className="flex justify-center p-8">{t('blog.loading')}</div>;
   }
 
   return (
     <div className="container mx-auto py-8 px-4">
-      <h1 className="text-3xl font-bold mb-8 text-center">הבלוג שלנו</h1>
+      <h1 className="text-3xl font-bold mb-8 text-center">{t('blog.title')}</h1>
       <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {posts?.map((post) => (
           <Card key={post.id} className="hover:shadow-lg transition-shadow">
             <CardHeader>
               <CardTitle className="text-xl">{post.title}</CardTitle>
-              <p className="text-sm text-gray-500">{new Date(post.createdAt).toLocaleDateString('he-IL')}</p>
+              <p className="text-sm text-gray-500">{new Date(post.createdAt).toLocaleDateString()}</p>
             </CardHeader>
             <CardContent>
               <p className="text-gray-600">{post.content}</p>

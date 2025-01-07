@@ -55,5 +55,31 @@
     "email": "דוא״ל",
     "instantMessage": "הודעה מיידית",
     "socialMedia": "רשתות חברתיות"
+  },
+  "blog": {
+    "title": "הבלוג שלנו",
+    "loading": "טוען...",
+    "readMore": "קרא עוד"
+  },
+  "admin": {
+    "login": {
+      "title": "התחברות מנהל",
+      "username": "שם משתמש",
+      "password": "סיסמה",
+      "submit": "התחבר",
+      "error": "שם משתמש או סיסמה שגויים",
+      "success": "התחברת בהצלחה"
+    },
+    "dashboard": {
+      "title": "ניהול הבלוג",
+      "logout": "התנתק",
+      "newPost": {
+        "title": "פוסט חדש",
+        "titlePlaceholder": "כותרת הפוסט",
+        "contentPlaceholder": "תוכן הפוסט",
+        "submit": "פרסם פוסט",
+        "success": "הפוסט נשמר בהצלחה"
+      }
+    }
   }
 }
