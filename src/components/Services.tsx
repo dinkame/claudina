@@ -3,7 +3,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslation } from 'react-i18next';
 
 const Services = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   
   return (
     <section className="py-24 bg-gray-900">
@@ -24,7 +24,9 @@ const Services = () => {
               <CardTitle className="text-2xl text-gray-900">{t('services.processOptimization.title')}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-700 leading-relaxed">{t('services.processOptimization.description')}</p>
+              <p className={`text-gray-700 leading-relaxed ${i18n.language === 'en' ? 'text-left' : 'text-right'}`}>
+                {t('services.processOptimization.description')}
+              </p>
             </CardContent>
           </Card>
 
@@ -42,7 +44,9 @@ const Services = () => {
               <CardTitle className="text-2xl text-gray-900">{t('services.productManagement.title')}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-700 leading-relaxed">{t('services.productManagement.description')}</p>
+              <p className={`text-gray-700 leading-relaxed ${i18n.language === 'en' ? 'text-left' : 'text-right'}`}>
+                {t('services.productManagement.description')}
+              </p>
             </CardContent>
           </Card>
 
@@ -60,7 +64,9 @@ const Services = () => {
               <CardTitle className="text-2xl text-gray-900">{t('services.strategicPlanning.title')}</CardTitle>
             </CardHeader>
             <CardContent>
-              <p className="text-gray-700 leading-relaxed">{t('services.strategicPlanning.description')}</p>
+              <p className={`text-gray-700 leading-relaxed ${i18n.language === 'en' ? 'text-left' : 'text-right'}`}>
+                {t('services.strategicPlanning.description')}
+              </p>
             </CardContent>
           </Card>
         </div>
