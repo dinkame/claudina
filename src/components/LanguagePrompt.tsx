@@ -27,31 +27,39 @@ const LanguagePrompt = () => {
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="sm:max-w-md" dir={i18n.language === 'en' ? 'ltr' : 'rtl'}>
-        <div className="text-center space-y-4 p-4">
-          <h2 className="text-xl font-semibold">
-            {i18n.language === 'en' ? 'Why bilingual?' : '?למה דו לשוני'}
-          </h2>
-          <p className="text-muted-foreground">
-            {i18n.language === 'en' ? (
-              <>
-                Because tech speaks English,<br />
-                but our heart beats in Hebrew.
-              </>
-            ) : (
-              'כי חדשנות היא באנגלית'
-            )}
-          </p>
-          <Button
-            onClick={switchLanguage}
-            className="mt-4 w-full"
-          >
-            {i18n.language === 'en' ? (
-              <>Ready to switch? Click here to continue in עברית</>
-            ) : (
-              'Click here to continue in English'
-            )}
-          </Button>
+      <DialogContent 
+        className="sm:max-w-md border-0 bg-transparent shadow-none" 
+        dir={i18n.language === 'en' ? 'ltr' : 'rtl'}
+      >
+        <div className="group relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-500/30 to-purple-500/30 rounded-2xl blur-xl transition-all duration-300 group-hover:blur-2xl"></div>
+          <div className="relative p-8 rounded-2xl backdrop-blur-md border border-white/10 bg-white/10 transition-all duration-300 group-hover:bg-white/20">
+            <div className="flex flex-col items-center text-center space-y-6">
+              <h2 className="text-2xl font-bold text-white">
+                {i18n.language === 'en' ? 'Why bilingual?' : '?למה דו לשוני'}
+              </h2>
+              <p className="text-lg text-white/80">
+                {i18n.language === 'en' ? (
+                  <>
+                    Because tech speaks English,<br />
+                    but our heart beats in Hebrew.
+                  </>
+                ) : (
+                  'כי חדשנות היא באנגלית'
+                )}
+              </p>
+              <Button
+                onClick={switchLanguage}
+                className="w-full bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-sm transition-all duration-300 hover:scale-105"
+              >
+                {i18n.language === 'en' ? (
+                  <>Ready to switch? Click here to continue in עברית</>
+                ) : (
+                  'Click here to continue in English'
+                )}
+              </Button>
+            </div>
+          </div>
         </div>
       </DialogContent>
     </Dialog>
