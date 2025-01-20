@@ -7,6 +7,7 @@ import Testimonials from "../components/Testimonials";
 import About from "../components/About";
 import AboutUs from "../components/AboutUs";
 import Contact from "../components/Contact";
+import LanguagePrompt from "../components/LanguagePrompt";
 
 const Index = () => {
   const { i18n } = useTranslation();
@@ -14,6 +15,7 @@ const Index = () => {
 
   return (
     <div dir={i18n.language === 'en' ? 'ltr' : 'rtl'} className="min-h-screen bg-background">
+      <LanguagePrompt />
       <Hero />
       <Services />
       <Testimonials />
