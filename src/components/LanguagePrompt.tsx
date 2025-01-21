@@ -53,7 +53,7 @@ const LanguagePrompt = () => {
                 className="w-full bg-white/10 hover:bg-white/20 text-white border border-white/20 backdrop-blur-sm transition-all duration-300 hover:scale-105"
               >
                 {i18n.language === 'en' ? (
-                  <>Ready to switch? Click here to continue in עברית</>
+                  'המשך לגרסה העברית'
                 ) : (
                   'Click here to continue in English'
                 )}
