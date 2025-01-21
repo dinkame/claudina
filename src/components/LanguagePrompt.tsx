@@ -42,7 +42,7 @@ const LanguagePrompt = () => {
                 {i18n.language === 'en' ? (
                   <>
                     Because tech speaks English,<br />
-                    but our heart beats in Hebrew.
+                    but our heart beats in Hebrew
                   </>
                 ) : (
                   'כי חדשנות היא באנגלית'
