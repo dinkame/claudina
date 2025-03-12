@@ -1,5 +1,7 @@
+
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { ChevronDown } from 'lucide-react';
 
 const Hero = () => {
   const { t } = useTranslation();
@@ -27,6 +29,9 @@ const Hero = () => {
           <p className="text-xl text-blue-50 max-w-2xl mx-auto leading-relaxed">
             {t('hero.description')}
           </p>
+        </div>
+        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
+          <ChevronDown className="w-8 h-8 text-white" />
         </div>
       </div>
     </section>
