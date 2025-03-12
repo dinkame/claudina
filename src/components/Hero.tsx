@@ -30,9 +30,11 @@ const Hero = () => {
             {t('hero.description')}
           </p>
         </div>
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 animate-bounce">
-          <ChevronDown className="w-8 h-8 text-white" />
-        </div>
+      </div>
+      
+      {/* Positioned at the absolute bottom of the section */}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
+        <ChevronDown className="w-8 h-8 text-white" />
       </div>
     </section>
   );
