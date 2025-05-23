@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -19,6 +20,10 @@ export default {
 		},
 		extend: {
 			colors: {
+				// Lovable brand colors
+				'lovable-dark-blue': '#32415a',
+				'lovable-bright-blue': '#78cdeb', 
+				'lovable-dark-teal': '#00828c',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
