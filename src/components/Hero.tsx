@@ -8,16 +8,7 @@ const Hero = () => {
 
   return (
     <section className="relative h-[90vh] flex items-center justify-center overflow-hidden">
-      <div className="absolute inset-0">
-        <img 
-          src="/lovable-uploads/42772dbd-10db-4b1d-8c7a-74a4b0050243.png" 
-          alt="Background" 
-          className="w-full h-full object-cover opacity-15"
-          loading="eager"
-          decoding="async"
-        />
-      </div>
-      <div className="absolute inset-0 bg-brand-darkBlue/80"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-darkBlue to-brand-darkBlue/80"></div>
       <div className="container px-4 mx-auto text-center relative z-10">
         <div className="space-y-6">
           <h1 className="text-6xl font-bold mb-6 text-white">

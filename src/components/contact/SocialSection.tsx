@@ -9,7 +9,7 @@ const SocialSection = () => {
   
   return (
     <div className="group relative">
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-brightBlue/30 to-brand-teal/30 rounded-2xl blur-xl transition-all duration-300 group-hover:blur-2xl"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-brightBlue/30 to-brand-brightBlue/20 rounded-2xl blur-xl transition-all duration-300 group-hover:blur-2xl"></div>
       <div className="relative h-full p-8 rounded-2xl backdrop-blur-md border border-white/10 bg-white/10 transition-all duration-300 group-hover:bg-white/20">
         <div className="flex flex-col items-center text-center space-y-4">
           <h3 className="text-xl font-semibold text-white">{t('contact.socialMedia')}</h3>

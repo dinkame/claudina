@@ -10,7 +10,7 @@ const Contact = () => {
   
   return (
     <section className="relative min-h-screen py-24 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-brand-darkBlue via-brand-darkBlue to-brand-teal">
+      <div className="absolute inset-0 bg-gradient-to-br from-brand-darkBlue via-brand-darkBlue to-brand-darkBlue/70">
         <div className="absolute inset-0 bg-[url('/noise.png')] opacity-20"></div>
       </div>
 
