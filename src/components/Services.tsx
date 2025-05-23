@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useTranslation } from 'react-i18next';
@@ -6,9 +7,9 @@ const Services = () => {
   const { t, i18n } = useTranslation();
   
   return (
-    <section className="py-24 bg-gray-900">
+    <section className="py-24 bg-white">
       <div className="container px-4 mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-16 text-white">{t('services.title')}</h2>
+        <h2 className="text-4xl font-bold text-center mb-16 text-brand-darkBlue">{t('services.title')}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <Card className="bg-white/95 overflow-hidden border-0 shadow-lg">
             <div className="h-48 overflow-hidden">
@@ -21,7 +22,7 @@ const Services = () => {
               />
             </div>
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">{t('services.processOptimization.title')}</CardTitle>
+              <CardTitle className="text-2xl text-brand-darkBlue">{t('services.processOptimization.title')}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className={`text-gray-700 leading-relaxed ${i18n.language === 'en' ? 'text-left' : 'text-right'}`}>
@@ -41,7 +42,7 @@ const Services = () => {
               />
             </div>
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">{t('services.productManagement.title')}</CardTitle>
+              <CardTitle className="text-2xl text-brand-darkBlue">{t('services.productManagement.title')}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className={`text-gray-700 leading-relaxed ${i18n.language === 'en' ? 'text-left' : 'text-right'}`}>
@@ -61,7 +62,7 @@ const Services = () => {
               />
             </div>
             <CardHeader>
-              <CardTitle className="text-2xl text-gray-900">{t('services.strategicPlanning.title')}</CardTitle>
+              <CardTitle className="text-2xl text-brand-darkBlue">{t('services.strategicPlanning.title')}</CardTitle>
             </CardHeader>
             <CardContent>
               <p className={`text-gray-700 leading-relaxed ${i18n.language === 'en' ? 'text-left' : 'text-right'}`}>

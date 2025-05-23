@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Linkedin } from "lucide-react";
 import { trackClick } from "../hooks/useTracking";
@@ -7,7 +8,7 @@ const About = () => {
   const { t } = useTranslation();
   
   return (
-    <section className="py-24 bg-gray-900">
+    <section className="py-24 bg-brand-darkBlue">
       <div className="container px-4 mx-auto">
         <h2 className="text-4xl font-bold text-center mb-16 text-white">{t('about.title')}</h2>
         <div className="flex flex-col md:flex-row items-center gap-12">
@@ -26,7 +27,7 @@ const About = () => {
                  target="_blank"
                  rel="noopener noreferrer"
                  onClick={() => trackClick('linkedin_link')}
-                 className="hover:text-blue-300 transition-colors inline-flex items-center gap-3 text-white">
+                 className="hover:text-brand-brightBlue transition-colors inline-flex items-center gap-3 text-white">
                 {t('about.name')}
                 <Linkedin className="inline h-6 w-6" />
               </a>
