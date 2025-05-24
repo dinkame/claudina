@@ -20,10 +20,10 @@ const About = () => {
                 <Linkedin className="inline h-6 w-6" />
               </a>
             </h3>
-            <p className="text-gray-200 leading-relaxed text-lg text-left">
+            <p className="text-gray-200 leading-relaxed text-lg text-right">
               {t('about.description1')}
             </p>
-            <p className="text-gray-200 leading-relaxed text-lg mt-4 text-left">
+            <p className="text-gray-200 leading-relaxed text-lg mt-4 text-right">
               {t('about.description2')}
             </p>
           </div>
